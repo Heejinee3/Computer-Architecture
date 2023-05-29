@@ -1,0 +1,77 @@
+### **Cache**
+
+<br>
+
+#### **Overview**
+
+---
+
+Cache Lab is intended to give you hands-on experience in designing a cache microarchitecture. Based on the concepts and skills you have acquired through the lab assignments, you are now ready to implement the cache. Through this lab assignment, you will be gaining an in-depth understanding on the fundamentals of designing how the cache interacts with the processor microarchitecture.
+
+<br>
+
+#### **Task**
+
+---
+
+In Cache Lab, you are required to implement data cache.
+
+Your implementation MUST comply with the following rules:
+
+1. RISC-V ISA (RV 32I)
+
+2. Instruction cache
+
+   1. No instruction cache
+   2. Instructions can be fetched within one cycle
+
+3. Data cache
+
+   1. Single-level directed-mapped cache which is part of the processor
+
+   2. Capacity:
+
+      a. (Excluding the tag bank)
+
+      b. 128B cache capacity that can house 32 words (128 bytes / 4 bytes per word)
+
+      c. 4 words per cache-line
+
+      d. No replacement policy needed (because this is a direct-mapped cache)
+
+      e. Write-through
+
+      f. Write-allocate
+
+      g. Blocking cache
+
+   3. Latency: 1 cycle for cache hit
+
+   4. Memory access granularity : 4 words
+
+4. Memory model
+
+   1. Instruction memory can be accessed within one cycle
+
+   2. Data memory can be accessed within 6 cycles
+      a. You fetch 4 words into cache in 6 cycles
+
+5. You need to implement only below instructions
+
+   1. JAL
+   2. JALR
+   3. BEQ, BNE, BLT, BGE, BLTU, BGEU
+   4. LW
+   5. SW
+   6. ADDI, SLTI, SLTIU, XORI, ORI, ANDI, SLLI, SRLI, SRAI
+   7. ADD, SUB, SLL, SLT, SLTU, XOR, SRL, SRA, OR, AND
+
+<br>
+
+#### **Glossary**
+
+---
+
+[Cache Associativity](https://velog.io/@chunjakim/Cache-Associativity)
+
+[Cache Replacement & Write Policy](https://velog.io/@chunjakim/Cache-Replacement-Write-Policy)
