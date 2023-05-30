@@ -50,7 +50,7 @@ Your implementation MUST comply with the following rules:
 
 The template of memory and register file is already given to you. You are only required to implement the control and data path of the single-cycle CPU. If you implement correctly, you will see a “Success” message in the console log when you run the testbench file, as shown in the figure below. The TAs recommend you to carefully design which modules are needed, how to connect them, and which control signals are necessary to transfer to the data units, before you start to write the code.
 
-![Figure1](/assets/lab/Computer-Architecture/Figure1.PNG)
+![Figure1](https://heejinee3.github.io/assets/lab/Computer-Architecture/Figure1.PNG)
 
 <br>
 
